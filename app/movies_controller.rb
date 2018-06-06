@@ -67,7 +67,7 @@ def can_find_using_where_clause_and_be_sorted
     end
   end
   binding.pry
-  sorted = movies.order(release_date: :desc)
+  sorted = movies.sort_by { |key, value| key = release_date desc }
 end
 
 def can_be_found_updated_and_saved
