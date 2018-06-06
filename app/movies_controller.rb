@@ -60,13 +60,13 @@ def can_find_using_where_clause_and_be_sorted
   #Movie.each do |key, value|
 
   movies = []
-  binding.pry
+  #binding.pry
   Movie.all.each do |movie|
     if movie.release_date > 2002
       movies << movie
     end
   end
-  binding.pry
+  #binding.pry
   sorted = movies.sort_by { |key| key[:release_date] }.reverse
 end
 
